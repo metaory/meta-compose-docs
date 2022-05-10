@@ -51,7 +51,6 @@ paths:
               examples:
                 Updated Video Rebecca Baker:
                   value:
-                    id: 13
                     name: Rebecca
                     url: http://bitu.vg/hablobiw
                     thumbnailUrl: https://images.unsplash.com/photo-1649358787769-8a380f337497?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=128&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MjAwNjQzNg&ixlib=rb-1.2.1&q=80&w=128
@@ -59,8 +58,6 @@ paths:
                     isPrivate: false
         '404':
           description: Video Not Found
-        '409':
-          description: Email Already Taken
       description: Update the information of an existing video.
       requestBody:
         content:
@@ -83,10 +80,6 @@ paths:
               Update ThumbnailUrl:
                 value:
                   thumbnailUrl: https://images.unsplash.com/photo-1649358787769-8a380f337497?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=128&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MjAwNjQzNg&ixlib=rb-1.2.1&q=80&w=128
-              Update Last Name & Date of Birth:
-                value:
-                  url: http://bitu.vg/hablobiw
-                  timesViewed: 42
         description: Patch video properties to update.
     delete:
       summary: 'Delete video'
@@ -117,8 +110,6 @@ paths:
                     isPrivate: false
         '400':
           description: Missing Required Information
-        '409':
-          description: Email Already Taken
       requestBody:
         content:
           application/json:
